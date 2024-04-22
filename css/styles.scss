@@ -1,0 +1,66 @@
+$color-primary: #000000;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #c4b173;
+$color-dark: #000000;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+$color-teal:#17A2B8;
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: $color-primary;
+}
+
+header {
+    padding: 10px;
+    background-image: linear-gradient(to right, $color-primary, $color-secondary,  $color-dark);
+    color: $color-mid;
+}
+
+header {
+    h2 {
+        color: $color-pale;
+    }
+}
+
+footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: $color-mid;
+}
+
+.accordion-button {
+    background-color: #d3d3d3;
+  }
+
+.carousel {
+    border: solid $color-secondary;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+@import 'modal';
+
+@import 'review-section';
